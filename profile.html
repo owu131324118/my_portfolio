@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="description" content="ページの概要文を記載します">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./index.html">
+    
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header-logo">
+            <img class="logo" src="./images/logo.png" width="100" height="100">
+            <title>PORTFOLIO</title>
+        </h1>
+        <div id="navArea">
+            <nav class="nav">
+                <div class="inner">
+                    <ul class="ul">
+                        <li class="li"><a class="a" href="#abc">TOP</a></li>
+                        <li class="li"><a class="a" href="index.html">HOME</a></li>
+                       
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="mask"></div>
+        </div>
+        <script src="./js/app.js"></script>
+    </header>
+
+
+    <main id="abc" class="main">
+        <div class="title">
+            <h1>PLOFILE</h1>
+        </div>
+        <div class="feature">
+            <div class="feature-text">
+                <h2>神田瑞希</h2>
+                <p>大妻女子大学
+                    <br>社会情報学部　社会情報学科　情報デザイン専攻
+
+                </p>
+                <p>千葉県出身<br>2005年8月31日生まれ<br>乃木坂46、櫻坂46<br>山下瞳月ちゃん推し</p>
+            </div>
+            <img class="section01" src="./images/profile/profile2.jpg" alt="プロフィール" width="300" height="400">
+        </div>
+    </main>
+
+    <section class="section">
+        <div class="title-text">
+            <h3>今まで見に行ったライブ</h3>
+            <h4 class="section-headline3">乃木坂46</h4>
+        </div>
+        <div class="live reverse">
+            <div class="live-text">
+
+                <p>2023.11.23<br>乃木坂46　5期生新参者</p>
+            </div>
+            <img src="./images/profile/sinzanmono.jpg" alt="新参者" width="300" height="400">
+        </div>
+
+        <div class="live">
+            <div class="live-text">
+
+                <p>2024.5.2<br>山下美月卒業コンサート</p>
+            </div>
+            <img src="./images/profile/sotukon.jpg" alt="卒コン" width="400" height="300">
+        </div>
+
+        <div class="live reverse">
+            <div class="live-text">
+
+                <p>2024.9.3<br>乃木坂真夏の全国ツアー2024</p>
+            </div>
+            <img src="./images/profile/jinguu.jpg" alt="神宮" width="400" height="300">
+        </div>
+
+        <h4 class="section-headline2">櫻坂46</h4>
+        <div class="live">
+            <div class="live-text">
+                <p>2024.9.13<br>櫻坂46　三期生ライブ</p>
+            </div>
+            <img src="./images/profile/sakurazakalive.jpg" alt="三期生ライブ" width="300" height="400">
+        </div>
+
+        <div class="live reverse">
+            <div class="live-text">
+                <p>推し:山下瞳月ちゃん<br>櫻坂46の三期生　2005年1月22日生まれ<br>京都府出身　身長152cm　血液型A型
+                <br>2023年6月28日発売の6thシングル「Start over!」<br>の共通カップリング曲「静寂の暴力」で初センター</p>
+            </div>
+            <img src="./images/profile/yama.jpg" alt="山下瞳月" width="320" height="400">
+            
+        </div>
+    </section>
+
+    <div id="def" class="photo">
+        <h2 class="section-headline2">PHOTO</h2>
+        <ul class="item-list">
+            <li>
+                <img src="./images/profile/kouyou.jpg" alt="国営昭和記念公園" width="300" height="400">
+                <dl>
+                    <dt>国営昭和記念公園</dt>
+                </dl>
+            </li>
+            <li>
+                <img src="./images/profile/irumi.jpg" alt="イルミネーション" width="300" height="400">
+                <dl>
+                    <dt>イルミネーション</dt>
+                </dl>
+            </li>
+            <li>
+                <img src="./images/profile/sakura.jpg" alt="上野恩賜公園" width="300" height="400">
+                <dl>
+                    <dt>上野恩賜公園</dt>
+                </dl>
+            </li>
+            <li>
+                <img src="./images/profile/biru.jpg" alt="夜景夜景" width="300" height="400">
+                <dl>
+                    <dt>夜景</dt>
+                </dl>
+            </li>
+            <li>
+                <img src="./images/profile/turi-.jpg" alt="クリスマスツリー" width="300" height="400">
+                <dl>
+                    <dt>クリスマスツリー</dt>
+                </dl>
+            </li>
+            <li>
+                <img src="./images/profile/dis.jpg" alt="ディズニー" width="300" height="400">
+                <dl>
+                    <dt>ディズニー</dt>
+                </dl>
+            </li>
+        </ul>
+        
+
+    </div>
+
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: false, distance: "60px", duration: 2000, delay: 200 });
+        ScrollReveal().reveal(".title", { delay: 200, origin: "left" });
+        ScrollReveal().reveal(".feature img", { delay: 600, origin: "bottom" });
+        ScrollReveal().reveal(".feature-text", { delay: 700, origin: "left" });
+        ScrollReveal().reveal(".title-text", { delay: 500, origin: "bottom" });
+        ScrollReveal().reveal(".section-headline", { delay: 200, origin: "bottom" });
+        ScrollReveal().reveal(".section img", { delay: 400, origin: "bottom" });
+        ScrollReveal().reveal(".live-text", { delay: 600, origin: "bottom" });
+        ScrollReveal().reveal(".section box3", { delay: 400, origin: "bottom" });
+        ScrollReveal().reveal(".box3-text", { delay: 600, origin: "bottom" });
+        ScrollReveal().reveal(".section-headline2", { delay: 200, origin: "bottom" });
+        ScrollReveal().reveal(".item-list", { delay: 600, origin: "bottom" });
+    </script>
+</body>
+
+</html>

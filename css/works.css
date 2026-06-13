@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+@media screen and (max-width: 768px) {
+    .grid {
+        display: block;
+    }
+
+    .grid-col-2>.grid-item,
+    .grid-col-3>.grid-item {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+.section {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.section-headline {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 40px 0 40px 0;
+}
+
+
+
+/*header*/
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #ffe4e1;
+    height: 60px;
+}
+
+.header-logo {
+    margin: 0;
+}
+
+.header-logo>a {
+    display: block;
+}
+
+.nav {
+    display: block;
+    width: 220px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    transition: all 0.5s;
+    z-index: 3;
+    opacity: 0;
+}
+
+.open nav {
+    left: 0;
+    opacity: 1;
+}
+.inner {
+    padding: 25px;
+}
+
+.ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.li {
+    margin: 0;
+    border-bottom: 1px solid #333;
+}
+
+.a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 1rem;
+    transition-duration: 0.2s;
+}
+
+.a:hover {
+    background-color: #d3d3d3;
+}
+
+.toggle-btn {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.toggle-btn span {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.5s;
+    border-radius: 4px;
+}
+
+.toggle-btn span:nth-child(1) {
+    top: 4px;
+}
+
+.toggle-btn span:nth-child(2) {
+    top: 14px;
+} 
+
+.toggle-btn span:nth-child(3) {
+    bottom: 4px;
+}
+
+.open .toggle-btn span {
+    background-color: #fff;
+}
+
+.open .toggle-btn span:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg);  
+}
+
+.open .toggle-btn span:nth-child(2) {
+   opacity: 0;
+}
+
+.open .toggle-btn span:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg);  
+}
+
+#mask {
+    display: none;
+    transition: all 0.5s;
+}
+
+.open #mask {
+    display: block;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.section-headline {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+.feature-headline {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.img {
+    width: 100%;
+}
+
+.card-label {
+    position: absolute;
+    background-color: #999;
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.content {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-list {
+    max-width: 300px;
+    margin-bottom: 50px;
+}
+
+.card-list img {
+    transition: 0.5s;
+}
+.card-list img:hover {
+    transform: scale(1.1);
+}
+
+.card-listtext {
+    text-align: center;
+    line-height: 1.6;
+}

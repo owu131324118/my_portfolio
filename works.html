@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="description" content="ページの概要文を記載します">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/works.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="index.html">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header-logo">
+            <img class="logo" src="./images/logo.png" width="100" height="100">
+            <title>PORTFOLIO</title>
+        </h1>
+        <div id="navArea">
+            <nav class="nav">
+                <div class="inner">
+                    <ul class="ul">
+                        <li class="li"><a class="a" href="#abc">TOP</a></li>
+                        <li class="li"><a class="a" href="index.html">HOME</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="mask"></div>
+        </div>
+        <script src="./js/app.js"></script>
+    </header>
+
+    <section id="abc" class="section section-secunday">
+        <h1 class="section-headline">WORKS</h1>
+
+        <div class="content">
+            <div class="card-wrap">
+                <div class="card-list">
+                    <dt class="feature-headline">ダイアグラム　血液型</dt>
+                    <span class="card-label">NEW</span>
+                    <a href="./images/daiaguramu.jpg">
+                        <p><img src="./images/daiaguramu.jpg" width="300" height="300" alt="ダイアグラム"></p>
+                    </a>
+                    <p class="card-listtext">血液型のダイアグラムを作りました。A組はO型が一番多かったです。</p>
+                </div>
+                
+                
+
+                <div class="card-list">
+                    <dt class="feature-headline">ダイアグラム　星座</dt>
+                    <a href="./images/daiaguramu2.jpg">
+                        <p><img src="./images/daiaguramu2.jpg" width="300" height="300" alt="ダイアグラム"></p>
+                    </a>
+                    
+                    <p class="card-listtext">星座のダイアグラムも作りました。<br>かに座が一番多かったです。</p>
+                </div>
+
+                <div class="card-list">
+                    <dt class="feature-headline">図と地</dt>
+                    <a href="./images/zutoji.jpg">
+                        <p><img src="./images/zutoji.jpg" width="300" height="300" alt="図と地"></p>
+                    </a>
+                    
+                    <p class="card-listtext">「地」とは絵の背景を指し、「図」とはそこに描かれた図形を指します。<br>この場合は人の横顔と木を描きました。</p>
+                </div>
+
+                
+                <div class="card-list">
+                    <dt class="feature-headline">ロゴ</dt>
+                    <a href="./images/logo.jpg">
+                        <p><img src="./images/logo.jpg" width="300" height="300" alt="ロゴ"></p>
+                    </a>
+                    
+                    <p class="card-listtext">このロゴはプラネタリウムをイメージして作成しました。<br>星がグラデーションになっているのがポイントです。</p>
+                </div>
+
+                
+                <div class="card-list">
+                    <dt class="feature-headline">名刺</dt>
+                    <a href="./images/meisi.jpg">
+                        <p><img src="./images/meisi.jpg" width="300" height="300" alt="名刺"></p>
+                    </a>
+                    
+                    <p class="card-listtext">和文、欧文それぞれの名刺を作成しました。<br>フォントや配置など細部までこだわりました。</p>
+                </div>
+
+                <div class="card-list">
+                    <dt class="feature-headline">日記</dt>
+                    <a href="./images/nikki.jpg">
+                        <p><img src="./images/nikki.jpg" width="300" height="300" alt="日記"></p>
+                    </a>
+                    
+                    <p class="card-listtext">文字組みや余白に気を付けて日記を制作しました。</p>
+                </div>
+
+                <div class="card-list">
+                    <dt class="feature-headline">ピクトグラム</dt>
+                    <a href="./images/pikutoguramu.jpg">
+                        <p><img src="./images/pikutoguramu.jpg" width="300" height="300" alt="ダイアグラム"></p>
+                    </a>
+                    
+                    <p class="card-listtext">それぞれの動物の特徴をとらえて一目で何の動物かわかるように工夫しました。<br>左上から猫、牛、ライオン、ウサギです。</p>
+                </div>
+
+                <div class="card-list">
+                    <dt class="feature-headline">エルモ</dt>
+                    <a href="./images/erumo.png">
+                        <p><img src="./images/erumo.png" width="300" height="300" alt="エルモ"></p>
+                    </a>
+                    <p class="card-listtext">p5.jsでセサミストリートの大人気キャラクター、エルモを作りました。</p>
+                </div>
+
+                <div class="card-list">
+                    <dt class="feature-headline">ゲーム</dt>
+                    <a href="./images/usagi.png">
+                        <p><img src="./images/usagi.png" width="300" height="300" alt="ゲーム"></p>
+                    </a>
+                   
+                    <p class="card-listtext">こちらもp5.jsで制作しました。<br>上から亀が落ちてくるのでウサギに当てることでポイントが入ります。</p>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+        
+
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script>
+                ScrollReveal({ reset: false, distance: "60px", duration: 2000, delay: 200 });
+                ScrollReveal().reveal(".section-headline", { delay: 200, origin: "bottom" });
+                ScrollReveal().reveal(".feature-headline", { delay: 400, origin: "bottom" });
+                ScrollReveal().reveal(".card-label", { delay: 500, origin: "bottom" });
+                ScrollReveal().reveal(".card-listtext", { delay: 700, origin: "bottom" });
+                ScrollReveal().reveal(".section-button", { delay: 800, origin: "bottom" });
+                
+            </script>    
+</body>
+
+</html>
